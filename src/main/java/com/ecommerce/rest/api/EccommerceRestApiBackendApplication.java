@@ -20,6 +20,11 @@ public class EccommerceRestApiBackendApplication {
 		return "Hello "+name;
 	}
 
+	@GetMapping("/heome")
+	public String home(){
+		return "Home Page";
+	}
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(EccommerceRestApiBackendApplication.class, args);
